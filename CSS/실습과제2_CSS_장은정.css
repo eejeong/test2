@@ -1,0 +1,342 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+}
+.instagram {
+  display: flex;
+  width: 1690px;
+}
+/* ------------------좌측 사이드바------------------*/
+.section {
+  position: fixed;
+  width: 335px;
+  float: left;
+  border-right: 1px solid hsl(0, 0%, 85%);
+  padding: 8px 12px 20px;
+}
+
+/*상단 로고*/
+.sidelogo {
+  margin: 0px 0px 10px;
+  padding: 25px 12px 16px;
+}
+
+/*SIDE MENU*/
+.nav {
+  margin: 0px 0px 300px;
+}
+
+.menu {
+  display: flex;
+  font-size: 15px;
+  line-height: 45px;
+  margin: 2px 0px;
+  padding: 5px;
+  align-items: center;
+}
+
+.menu > img {
+  width: 21px;
+  height: 21px;
+  margin: 0px 13px 0px 9px;
+}
+
+/*SIDE MENU_프로필*/
+.menu .profileImg {
+  width: 24px;
+  height: 24px;
+  margin: 0px 13px 0px 8px;
+  border-radius: 50%;
+}
+
+/*SIDE MENU_더보기*/
+.undermenu {
+  display: flex;
+  font-size: 15px;
+  line-height: 45px;
+  padding: 5px;
+  align-items: center;
+}
+
+.undermenu > img {
+  width: 21px;
+  height: 21px;
+  margin-left: 10px;
+  margin-right: 13px;
+}
+
+/* ------------------메인 화면------------------*/
+.content {
+  width: 490px;
+  height: 100%;
+  float: left;
+  margin: 0px 50px 0px 665px;
+}
+
+/* 메인 화면_스토리*/
+.header {
+  display: flex;
+  align-items: center;
+  flex-basis: 490px;
+  width: 490px;
+}
+
+.story {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 25px 7px 5px;
+}
+
+.storyImgBg {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 63px;
+  height: 63px;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  background-image: linear-gradient(#fff, #fff),
+    linear-gradient(to right, #b827fc 0%, #fec837 75%, #fd1892 100%);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+.item {
+  display: flex;
+  margin: 0 auto;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+
+.item img {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.items {
+  font-size: 13px;
+}
+
+/* 메인 화면_게시물*/
+.main {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 490px;
+  width: 490px;
+  margin-top: 10px;
+}
+
+.postid {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 14px;
+  line-height: 45px;
+  margin: 10px 0px 0px 0px;
+  padding: 5px;
+}
+
+.postid > img {
+  width: 40px;
+  height: 40px;
+  margin: 5px 15px 5px 5px;
+  border-radius: 100%;
+}
+
+.postid .postidImg {
+  width: 15px;
+  height: 15px;
+  margin-left: 260.5px;
+}
+
+.postid .minji {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  background-image: linear-gradient(#fff, #fff),
+    linear-gradient(to right, #b827fc 0%, #fec837 75%, #fd1892 100%);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+.posttime {
+  display: inline-block;
+  color: grey;
+  margin-left: 5px;
+}
+
+.postimg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0px;
+}
+
+.postimg > img {
+  width: 490px;
+  height: 490px;
+}
+
+.posticon {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 10px 0px 10px;
+  margin-top: 5px;
+}
+
+.posticon .posticon2 {
+  width: 21px;
+  height: 21px;
+  margin: 0px 10px 0px 10px;
+}
+
+.posticon img {
+  width: 21px;
+  height: 21px;
+}
+
+.postlike {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 13px;
+  margin: 10px 10px 0px 10px;
+}
+
+.postlike img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: center;
+  font-size: 13px;
+  margin: 0px 10px 5px 12px;
+}
+
+.postreply {
+  display: inline-block;
+  color: grey;
+}
+
+.reply {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: center;
+  font-size: 13px;
+  line-height: 150%;
+  margin: 10px 10px 10px 0px;
+}
+
+/* ------------------우측 사이드바------------------*/
+.aside {
+  width: 335px;
+  height: 1000px;
+  float: left;
+  padding: 30px 0px 0px;
+}
+
+/*우측 SIDE MENU_프로필*/
+.profile {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 13px;
+  line-height: 150%;
+  margin: 0px 0px 10px;
+}
+
+.profile .profileImgBg {
+  width: 63px;
+  height: 63px;
+  margin: 0px 13px 0px 0px;
+  border-radius: 50%;
+}
+
+.recommend {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin: 20px 0px 20px;
+}
+
+.text {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.text2 {
+  display: inline-block;
+  font-size: 12px;
+  color: #9b9b9b;
+}
+
+.text3 {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: bold;
+  color: #0095f6;
+}
+
+.friends {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  font-size: 14px;
+  margin: 15px 0px 10px;
+  padding: 0px 5px 0px 0px;
+}
+
+.friends img {
+  width: 30px;
+  height: 30px;
+  margin: 0px 13px 0px 8px;
+  border-radius: 50%;
+}
+
+.friendprofile {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.friendlist {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: center;
+  font-size: 14px;
+}
+
+.rule {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: center;
+  justify-content: space-between;
+  font-size: 14px;
+  margin: 30px 0px 0px 8px;
+}
